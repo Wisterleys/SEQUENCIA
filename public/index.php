@@ -15,7 +15,7 @@
     <div class="space-w-h">
         <div class="container color p-5 text-light">
             <header class="d-flex justify-content-center align-items-center flex-column" >
-                <h3 class="mb-3">App "PRIMOS"</h3>
+                <h3 class="mb-3">App "SORTEIO"</h3>
                 <p>Escreva um programa que preencha um array com 20 números inteiros sorteados entre 1 e 10. Depois informe qual ou quais número(s) não se repetiram.</p>
                 
             </header>
