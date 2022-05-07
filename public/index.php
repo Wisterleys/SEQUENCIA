@@ -1,4 +1,4 @@
-<?php require_once "./../php/Primos.php"; ?>
+<?php require_once "./../php/Sorteio.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,42 +9,30 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.min.js">
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="shortcut icon" href="assets/images/account-history-line-art-vector-260nw-273860531.webp" type="image/x-icon">
-    <title>PRIMOS</title>
+    <title>Sorteio</title>
 </head>
 <body>
     <div class="space-w-h">
         <div class="container color p-5 text-light">
             <header class="d-flex justify-content-center align-items-center flex-column" >
                 <h3 class="mb-3">App "PRIMOS"</h3>
-                <p>Informe um número inteiro inicial e final e saberá os números primos que estão compreendidos entre o valor inicial e o final </p>
-                <p>Regra: Será desprezado o número inicial e final recebidos como parâmetro</p>
+                <p>Escreva um programa que preencha um array com 20 números inteiros sorteados entre 1 e 10. Depois informe qual ou quais número(s) não se repetiram.</p>
+                
             </header>
             <form method="get">
-                <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">De:</label>
-                    <div class="col-sm-10">
-                        <input type="number" class="form-control" name="start" >
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Até:</label>
-                    <div class="col-sm-10">
-                    <input type="number" class="form-control" name="end" >
-                    </div>
-                </div>
-                
                 
                 <div class="row mb-3">
                     <div class="col-sm-10 offset-sm-2">
                         <label for="result">Resultado:</label>
-                        <div class="form-check" id="result" class="row" style="height: 200px;overflow-y:scroll;">
-                           <?php for ($i=0; $i < count($result_array); $i++) { ?>
-                               <span><?=$result_array[$i]?></span>
-                           <?php }?> 
-                        </div>
+                        <p>
+                            Total sorteio: <?=$resul_arr?>
+                        </p>
+                        <p>
+                            Numeros repetidos: <?=$resul_rep?>
+                        </p>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Verificar</button>
+                <button type="submit" class="btn btn-primary">Sortear</button>
             </form>
         </div>
     </div>
