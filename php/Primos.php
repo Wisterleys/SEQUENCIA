@@ -2,7 +2,7 @@
 require_once "ArrayPrimos.php";
 $result_array=[];
 
-$result = "";
+$result = [];
 if(!empty($_GET['start'])&&!empty($_GET['end']))
 {
     $start = intval($_GET['start']);
@@ -12,7 +12,7 @@ if(!empty($_GET['start'])&&!empty($_GET['end']))
             array_search($i,ArrayPrimos::numbers())?array_push($result_array,$i):0;
         }
     }
-    $result = json_encode($result_array);
+    
     
 }
 

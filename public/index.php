@@ -36,9 +36,12 @@
                 
                 <div class="row mb-3">
                     <div class="col-sm-10 offset-sm-2">
-                    <div class="form-check">
-                        Resultado: <?=$result?>
-                    </div>
+                        <label for="result">Resultado:</label>
+                        <div class="form-check" id="result" class="row" style="height: 200px;overflow-y:scroll;">
+                           <?php for ($i=0; $i < count($result_array); $i++) { ?>
+                               <span><?=$result_array[$i]?></span>
+                           <?php }?> 
+                        </div>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Verificar</button>
