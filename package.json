@@ -1,0 +1,22 @@
+{
+  "name": "seculoano",
+  "version": "1.0.0",
+  "description": "Desenvolva uma função que receba como parametro o ano e retorne o século ao qual este ano faz parte. O primeiro século começa no ano 1 e termina no ano 100, o segundo século começa no ano 101 e termina no 200",
+  "main": "index.php",
+  "scripts": {
+    "test": "php -S localhost:8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wisterleys/SECULOANO.git"
+  },
+  "author": "Wisterleys Da Silva Sousa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wisterleys/SECULOANO/issues"
+  },
+  "homepage": "https://github.com/Wisterleys/SECULOANO#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

@@ -1,0 +1,9 @@
+RewriteEngine on
+
+#RewriteBase /
+RewriteBase /public/
+
+
+RewriteRule ^index$ index.php [NC,QSA,L]
+
+
