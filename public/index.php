@@ -37,7 +37,7 @@
                 <div class="row mb-3">
                     <div class="col-sm-10 offset-sm-2">
                     <div class="form-check">
-                        Resultado: 
+                        Resultado: <?=$result?>
                     </div>
                     </div>
                 </div>

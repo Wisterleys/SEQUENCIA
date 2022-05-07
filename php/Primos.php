@@ -1,7 +1,19 @@
 <?php
-if($ano = !empty($_GET['ano'])?intval($_GET['ano']):false)
+require_once "ArrayPrimos.php";
+$result_array=[];
+
+$result = "";
+if(!empty($_GET['start'])&&!empty($_GET['end']))
 {
-    $result = ceil($ano/100);
-}else $result = "";
+    $start = intval($_GET['start']);
+    $end = intval($_GET['end']);
+    for ($i=$start; $i < $end; $i++) { 
+        if($i>$start&&(($i%2)!=0)){
+            array_search($i,ArrayPrimos::numbers())?array_push($result_array,$i):0;
+        }
+    }
+    $result = json_encode($result_array);
+    
+}
 
 ?>
